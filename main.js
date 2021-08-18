@@ -82,9 +82,10 @@ const getHoroscope = url => {
     return dataPromise;
 }
 
-let todayHoroscope = {};
 
-//time to print out some horoscopes!!
+
+//time to print out some horoscopes!! this is what an example would look like:
+
 /*const mary = randomSign();
 //console.log(makeURL(mary));
 getHoroscope(makeURL(mary)).then(function(response){
@@ -100,8 +101,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-let user_response = '';
-
+let todayHoroscope = {};
 rl.question("Would you like your random horoscope for today? ", function(answer){
   console.log(`You answered ${answer}`);
   if(answer === 'yes'){
@@ -116,9 +116,3 @@ rl.question("Would you like your random horoscope for today? ", function(answer)
   }
   rl.close();
 });
-
-/*const vincent = randomSign();
-getHoroscope(makeURL(vincent)).then(function(response){
-  todayHoroscope = horoObj(response.sign, response.date, response.horoscope);
-  return todayHoroscope.printOut();
-});*/
