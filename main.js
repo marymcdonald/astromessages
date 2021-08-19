@@ -64,7 +64,7 @@ const horoObj = (sign, date, horoscope) => {
 
     printOut(){
       console.log(`Today's date: ${this.date}.
-You are a ${sign} today. How nice!
+You are a ${this.sign} today. How nice!
 
 Please read your astro message:
 ${this.horoscope}`);
